@@ -1,4 +1,4 @@
-apt/nessus-agent/NessusAgent-6.11.1-ubuntu1110_amd64.deb:
-  size: 15319456
-  object_id: a627efe8-6e6f-43d5-4611-88b6c0b919d8
-  sha: e48baa87380ded7d28a62b800174f87d1b3369cc
+apt/nessus-agent/NessusAgent-7.4.1-debian6_amd64.deb:
+  size: 15192510
+  object_id: NessusAgent-7.4.1-debian6_amd64.deb
+  sha: aeee9eb22487485eb194901650407722
