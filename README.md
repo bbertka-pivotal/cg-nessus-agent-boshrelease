@@ -6,7 +6,7 @@ To use this bosh release, first upload it to your bosh:
 
 ```
 bosh target BOSH_HOST
-git clone https://github.com/18F/cg-nessus-agent.git
+git clone https://github.com/bbertka-pivotal/cg-nessus-agent.git
 cd cg-nessus-agent-boshrelease
 bosh upload release releases/nessus-agent/nessus-agent-1.yml
 ```
