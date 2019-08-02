@@ -1,0 +1,24 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: bosh/main-ruby-go
+
+inputs:
+  - name: bosh-master
+  - name: bosh-cli
+  - name: version
+  - name: release-tarball
+
+outputs:
+  - name: bosh-master-with-final
+
+params:
+  BLOBSTORE_ACCESS_KEY_ID: {{s3-bosh-releases-access-key-id}}
+  BLOBSTORE_SECRET_ACCESS_KEY: {{s3-bosh-releases-secret-access-key}}
+
+
+run:
+  path: ci/pipeline-tasks/finalize-bosh-release.sh
